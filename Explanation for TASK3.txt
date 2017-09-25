@@ -1,0 +1,44 @@
+Process for merging the results of TASK1 and TASK3:
+
+In both tasks, the urls were crawled by keeping in consideration, that the urls in shallower depth are more important
+than the ones in deeper depth. Therefore the lists contain the urls by the level they were crawled instead of their depths.
+
+Therefore while merging the two lists, emphasis will be on retaining maximum urls of shallower depths from either lists.
+
+This algorithm should result into a merged list with minimal loss of information and also retain the order they were crawled
+
+Algo:
+	
+	Let,
+		A = List from TASK1 
+		B = List from TASK2
+		MergedList = Empty list
+	
+	if either list is empty, return the other list
+	
+	Get the length of both the lists
+	
+	Iterate till the shorter list among the two lists is not empty
+		
+		Pop the first item from A and the first item from B
+		
+		if both the items are same, add any item to the MergedList 
+		
+		else 
+		
+			Check if first item from A occurs in B
+				If it occurs, 
+					then add the first item from A to the MergedList and remove it from B
+			
+			Else check if first item from B occurs in A
+				If it occurs, 
+					add the first item from A to the MergedList 
+					add the item from B to the MergedList
+					remove the item matching to the item from list B from list A
+			
+			Else if item from A is not present in B and item from B is not present in A,
+				Add the item from A to the MergedList
+				Add the item from B to the MergedList
+	
+
+	After completion of the iteration, add the remaining items from the longer list to the MergedList	

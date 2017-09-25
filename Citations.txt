@@ -1,0 +1,10 @@
+Citations:
+
+Following things were used while developing the crawler:
+	Beautiful Soup package in python - https://beautiful-soup-4.readthedocs.io/en/latest/
+	urllib2 package in python
+
+Sites and video tutorials referred:
+	Video tutorials and sites for learning python.
+	Video tutorials regarding web crawlers on youtube.
+	NewBoston web crawler tutorials - https://www.youtube.com/watch?v=nRW90GASSXE

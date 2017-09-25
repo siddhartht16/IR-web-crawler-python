@@ -1,0 +1,40 @@
+In task2, we have performed focused crawling for the keyword "solar" using the seed url "https://en.wikipedia.org/wiki/Sustainable_energy".
+
+Following two approaches were used:
+Breadth first crawling
+Depth first crawling
+
+Breadth First crawling:
+Crawler crawls the pages by level, i.e the neighbours are given more priority as compared to children. 
+For example, crawler first crawls the seed url. Thereafter, all the children of the seed url are crawled, instead of going into the hierarchy of the first child. 
+This process is then repeated for the children of each child of seed url and so forth.
+In this approach, level or sibling based crawling is done instead of depth wise crawling for children.
+
+Depth First crawling:
+Crawler crawls the pages by hierarchy, i.e. the children of each node are crawled till all the children are covered.
+For example, crawler first crawls the seed url. Thereafter it crawls the first child of the seed url. 
+After that the first child of seed url's first child is crawled. 
+
+This process is repeated till the complete hierarchy of each child of seed url is completed.
+In this approach, depth based crawling is done instead of level wise crawling for children.
+
+No. of urls found after focused crawling for Breadth first crawling: 536
+No. of urls found after focused crawling for Depth first crawling: 301
+
+Breadth first crawling has resulted into more no. of crawled urls.
+
+Top 5 Urls for Breadth first crawling:
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Solar_heating
+https://en.wikipedia.org/wiki/Solar_photovoltaics
+https://en.wikipedia.org/wiki/Concentrated_solar_power
+
+Top 5 Urls for Depth first crawling:
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Solar_heating
+https://en.wikipedia.org/wiki/Solar_constant
+https://en.wikipedia.org/wiki/Sun
+
+By analysing the results of both approaches, we can see that the top three urls are common. Rest are different.
